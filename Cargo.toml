@@ -1,0 +1,19 @@
+[package]
+name = "discord-gpt3"
+version = "0.1.0"
+authors = ["Haze Booth <isnt@haze.cool>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0.114", features = ["derive"] }
+surf = "2.0.0-alpha.4"
+tokio = { version = "0.2.22", features = ["macros", "rt-threaded"] }
+http-client = "4.0.0"
+dotenv = "0.15.0"
+serde_json = "1.0.56"
+
+[dependencies.serenity]
+git = "https://github.com/acdenisSK/serenity"
+branch = "current"
+default_features = false
+features = ["builder", "cache", "client", "gateway", "http", "model", "utils", "rustls_backend"]
